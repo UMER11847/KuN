@@ -1,0 +1,6 @@
+{
+  "name": "KÜN — Holistic Mental Health",
+  "description": "Distinctive digital home for KÜN Holistic Mental Health Services in Karachi, Pakistan. Art-directed sanctuary for therapy, assessments, animal-assisted therapy, retreats, and café.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

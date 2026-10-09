@@ -1,0 +1,200 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  
+  --color-paper: #F4F0E8;
+  --color-paper-light: #FAF8F5;
+  --color-paper-dark: #ECE6DA;
+  --color-oxblood: #632D35;
+  --color-oxblood-dark: #4C2128;
+  --color-oxblood-light: #7E3B45;
+  --color-charcoal: #252521;
+  --color-charcoal-muted: #575752;
+  --color-olive: #777B60;
+  --color-olive-dark: #5C6049;
+  --color-olive-light: #8E9274;
+  --color-stone: #DAD3C7;
+  --color-stone-muted: #E6E0D6;
+  --color-stone-hairline: #D8D1C4;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+    background-color: #F4F0E8;
+    color: #252521;
+    transition: background-color 0.25s ease, color 0.25s ease;
+  }
+
+  body {
+    background-color: #F4F0E8;
+    color: #252521;
+    min-height: 100vh;
+  }
+}
+
+/* ───────────────────────────────────────────────────────────
+   EDITORIAL TYPOGRAPHY UTILITIES
+─────────────────────────────────────────────────────────── */
+.text-balance {
+  text-wrap: balance;
+}
+
+.editorial-hairline {
+  border-color: #DAD3C7;
+}
+
+.editorial-drop-cap::first-letter {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 3.75rem;
+  line-height: 1;
+  float: left;
+  margin-right: 0.75rem;
+  margin-top: 0.15rem;
+  color: #632D35;
+  font-weight: 600;
+}
+
+/* ───────────────────────────────────────────────────────────
+   WARM EDITORIAL DARK THEME SYSTEM
+   Maintains the identical art-directed cultural sanctuary aesthetic,
+   re-anchoring tones into an archival warm ink-stone palette.
+─────────────────────────────────────────────────────────── */
+html.dark {
+  background-color: #181815 !important;
+  color: #EDE8DE !important;
+  color-scheme: dark;
+}
+
+html.dark body {
+  background-color: #181815 !important;
+  color: #EDE8DE !important;
+}
+
+/* Canvases and Backgrounds */
+html.dark [class*="bg-[#F4F0E8]"] {
+  background-color: #181815 !important;
+}
+
+html.dark [class*="bg-[#FAF8F5]"] {
+  background-color: #20201C !important;
+}
+
+html.dark [class*="bg-[#ECE6DA]"] {
+  background-color: #24241F !important;
+}
+
+html.dark [class*="bg-[#E8E2D8]"] {
+  background-color: #2A2A24 !important;
+}
+
+html.dark [class*="bg-[#252521]"] {
+  background-color: #121210 !important;
+}
+
+/* Text Hierarchy */
+html.dark [class*="text-[#252521]"] {
+  color: #EDE8DE !important;
+}
+
+html.dark [class*="text-[#575752]"] {
+  color: #A6A194 !important;
+}
+
+html.dark [class*="text-[#777B60]"] {
+  color: #9DA282 !important;
+}
+
+html.dark [class*="text-[#632D35]"] {
+  color: #D46374 !important;
+}
+
+html.dark [class*="text-[#DAD3C7]"] {
+  color: #A6A194 !important;
+}
+
+html.dark [class*="text-[#F4F0E8]"] {
+  color: #EDE8DE !important;
+}
+
+/* Hairline Dividers & Borders */
+html.dark [class*="border-[#DAD3C7]"] {
+  border-color: #36362F !important;
+}
+
+html.dark [class*="border-[#E6E0D6]"] {
+  border-color: #2D2D27 !important;
+}
+
+html.dark [class*="border-[#3A3A35]"] {
+  border-color: #2D2D27 !important;
+}
+
+/* Primary Action Buttons & Accents */
+html.dark [class*="bg-[#632D35]"] {
+  background-color: #8C3946 !important;
+  color: #FAF8F5 !important;
+}
+
+html.dark [class*="hover:bg-[#4C2128]"]:hover {
+  background-color: #A04250 !important;
+}
+
+html.dark [class*="hover:bg-[#E8E2D8]"]:hover {
+  background-color: #2D2D27 !important;
+}
+
+html.dark [class*="border-l-2 border-[#632D35]"] {
+  border-left-color: #A04250 !important;
+}
+
+/* Interactive Form Controls in Dark Mode */
+html.dark input,
+html.dark select,
+html.dark textarea {
+  background-color: #20201C !important;
+  color: #EDE8DE !important;
+  border-color: #36362F !important;
+}
+
+html.dark input:focus,
+html.dark select:focus,
+html.dark textarea:focus {
+  border-color: #A04250 !important;
+  outline-color: #A04250 !important;
+}
+
+html.dark input::placeholder,
+html.dark textarea::placeholder {
+  color: rgba(166, 161, 148, 0.45) !important;
+}
+
+/* Drop cap and pull quotes optical compensation */
+html.dark .editorial-drop-cap::first-letter {
+  color: #D46374 !important;
+}
+
+html.dark blockquote [class*="text-[#632D35]"],
+html.dark .font-serif [class*="text-[#632D35]"] {
+  color: #D46374 !important;
+}
+
+/* Gentle image tuning in dark mode for soft evening contemplation */
+html.dark img {
+  filter: saturate(0.9) brightness(0.9);
+  transition: filter 0.3s ease;
+}
+
+html.dark img:hover {
+  filter: saturate(0.95) brightness(0.95);
+}
+
+/* Mobile drawer overlay in dark mode */
+html.dark .fixed.inset-0.bg-\[\#252521\]\/60 {
+  background-color: rgba(10, 10, 8, 0.75) !important;
+}
