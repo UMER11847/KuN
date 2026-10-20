@@ -3,6 +3,7 @@ import { Link } from '../lib/router';
 import { servicesData } from '../data/servicesData';
 import { journalArticles } from '../data/journalData';
 import { brandConfig } from '../data/brandConfig';
+import { images } from '../data/images';
 import { ArrowRight, ArrowUpRight } from 'lucide-react';
 
 export function HomePage() {
@@ -71,7 +72,7 @@ export function HomePage() {
             <div className="lg:col-span-5 relative">
               <div className="relative h-full min-h-[380px] lg:min-h-[520px] bg-[#E8E2D8] overflow-hidden border border-[#DAD3C7] group">
                 <img
-                  src="/src/assets/images/hero_editorial_sanctuary_1791583747451.jpg"
+                  src={images.sanctuary}
                   alt="Atmospheric light falling into quiet architectural sanctuary space"
                   className="w-full h-full object-cover object-center filter saturate-[0.92] group-hover:scale-[1.02] transition-transform duration-700 ease-out"
                   referrerPolicy="no-referrer"
@@ -238,7 +239,7 @@ export function HomePage() {
             <div className="lg:col-span-6 relative">
               <div className="relative overflow-hidden border border-[#DAD3C7] bg-[#FAF8F5]">
                 <img
-                  src="/src/assets/images/animal_assisted_therapy_1791583759590.jpg"
+                  src={images.animalAssistedTherapy}
                   alt="Attentive therapy dog resting in quiet room with client"
                   className="w-full h-auto object-cover filter saturate-[0.95]"
                   referrerPolicy="no-referrer"
@@ -304,7 +305,7 @@ export function HomePage() {
               <div className="space-y-6">
                 <div className="aspect-[16/10] overflow-hidden border border-[#DAD3C7] bg-[#E8E2D8]">
                   <img
-                    src="/src/assets/images/kun_experience_cafe_1791583774534.jpg"
+                    src={images.experienceCafe}
                     alt="Warm minimalist café corner with herbal infusion and books"
                     className="w-full h-full object-cover filter saturate-[0.92] hover:scale-105 transition-transform duration-700"
                     referrerPolicy="no-referrer"
@@ -339,7 +340,7 @@ export function HomePage() {
               <div className="space-y-6">
                 <div className="aspect-[16/10] overflow-hidden border border-[#DAD3C7] bg-[#E8E2D8]">
                   <img
-                    src="/src/assets/images/kun_retreat_mindfulness_1791583790140.jpg"
+                    src={images.retreat}
                     alt="Courtyard retreat setting with stone pavers and natural foliage"
                     className="w-full h-full object-cover filter saturate-[0.92] hover:scale-105 transition-transform duration-700"
                     referrerPolicy="no-referrer"

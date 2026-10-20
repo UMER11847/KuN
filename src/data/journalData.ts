@@ -1,3 +1,5 @@
+import { images } from './images';
+
 export interface JournalArticle {
   slug: string;
   title: string;
@@ -39,7 +41,7 @@ export const journalArticles: JournalArticle[] = [
       'Cultivating nervous system tolerance for mixed emotions builds genuine psychological resilience',
       'Confidential dialogue provides a safe container to examine difficult feelings without judgment',
     ],
-    image: '/src/assets/images/hero_editorial_sanctuary_1791583747451.jpg',
+    image: images.sanctuary,
     imageAlt: 'Sunlit quiet room with notebook and open journal on a wooden table',
   },
   {
@@ -66,7 +68,7 @@ export const journalArticles: JournalArticle[] = [
       'Useful for neurodivergent discovery, educational adjustments, and targeted therapeutic planning',
       'Always conducted through compassionate, ethical, and collaborative feedback sessions',
     ],
-    image: '/src/assets/images/therapy_dialogue_space_1791583808785.jpg',
+    image: images.therapyDialogue,
     imageAlt: 'Quiet library corner with psychology texts and comfortable seating',
   },
   {
@@ -93,7 +95,7 @@ export const journalArticles: JournalArticle[] = [
       'Animal partnerships act as gentle anchors for mindfulness and sensory grounding',
       'Facilitated ethically with trained practitioners ensuring both human and animal welfare',
     ],
-    image: '/src/assets/images/animal_assisted_therapy_1791583759590.jpg',
+    image: images.animalAssistedTherapy,
     imageAlt: 'Gentle golden therapy dog resting peacefully beside client in a warm room',
   },
   {
@@ -120,7 +122,7 @@ export const journalArticles: JournalArticle[] = [
       'Hospitality and psychological care intersect when spaces are designed with emotional intelligence',
       'Micro-moments of silence during the week protect against cumulative burnout',
     ],
-    image: '/src/assets/images/kun_experience_cafe_1791583774534.jpg',
+    image: images.experienceCafe,
     imageAlt: 'Warm textured café table with herbal tea and open literature in peaceful sunlight',
   },
 ];

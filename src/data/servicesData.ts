@@ -1,3 +1,5 @@
+import { images } from './images';
+
 export interface ServiceItem {
   slug: string;
   number: string;
@@ -44,7 +46,7 @@ export const servicesData: ServiceItem[] = [
       'Strict clinical confidentiality adhering to psychological ethics and data privacy',
     ],
     setting: 'In-person at our Karachi sanctuary or via secure virtual consultation',
-    image: '/src/assets/images/therapy_dialogue_space_1791583808785.jpg',
+    image: images.therapyDialogue,
     imageAlt: 'Quiet, warm architectural psychotherapy consultation room with comfortable armchairs and natural light',
     badgeKicker: 'Individual · Relational · Integrative',
     quote:
@@ -77,7 +79,7 @@ export const servicesData: ServiceItem[] = [
       'Collaborative feedback session accompanied by a comprehensive written report',
     ],
     setting: 'Conducted in-person in Karachi with preliminary diagnostic intake available online',
-    image: '/src/assets/images/hero_editorial_sanctuary_1791583747451.jpg',
+    image: images.sanctuary,
     imageAlt: 'Quiet study table with notebooks, ceramic bowl, and soft daylight for contemplative assessment',
     badgeKicker: 'Diagnostic · Cognitive · Neurodevelopmental',
     quote:
@@ -110,7 +112,7 @@ export const servicesData: ServiceItem[] = [
       'Structured formal reporting delivered within established judicial timeframes',
     ],
     setting: 'Specialized in-person appointments in Karachi or institutional on-site evaluation',
-    image: '/src/assets/images/hero_editorial_sanctuary_1791583747451.jpg',
+    image: images.sanctuary,
     imageAlt: 'Architectural space with structured lines and warm stone textures',
     badgeKicker: 'Medico-Legal · Objective · Institutional',
     quote:
@@ -143,7 +145,7 @@ export const servicesData: ServiceItem[] = [
       'A quiet, private garden or room setting in Karachi specifically maintained for hygiene and serenity',
     ],
     setting: 'In-person at our dedicated Karachi animal-assisted sanctuary courtyard',
-    image: '/src/assets/images/animal_assisted_therapy_1791583759590.jpg',
+    image: images.animalAssistedTherapy,
     imageAlt: 'Attentive, gentle therapy dog resting calmly on a woven jute rug beside relaxed hands',
     badgeKicker: 'Somatic · Co-Regulation · Tactile Presence',
     quote:
@@ -176,7 +178,7 @@ export const servicesData: ServiceItem[] = [
       'No dogmatic prescriptions — every exercise is voluntary and self-paced',
     ],
     setting: 'Selected serene retreats within the Sindh countryside and coastal retreats near Karachi',
-    image: '/src/assets/images/kun_retreat_mindfulness_1791583790140.jpg',
+    image: images.retreat,
     imageAlt: 'Serene courtyard garden with olive trees, stone path, and a person meditating in calm daylight',
     badgeKicker: 'Somatic · Cohort Immersions · Restorative',
     quote:
@@ -209,7 +211,7 @@ export const servicesData: ServiceItem[] = [
       'Discreet information available regarding KÜN clinical services should you wish to learn more',
     ],
     setting: 'Sanctuary location in Karachi (Visiting hours and access details provided upon enquiry)',
-    image: '/src/assets/images/kun_experience_cafe_1791583774534.jpg',
+    image: images.experienceCafe,
     imageAlt: 'Quiet café corner with open book on wabi-sabi philosophy, hot ceramic tea cup, and peaceful daylight',
     badgeKicker: 'Public Sanctuary · Sensory Gentle · Karachi',
     quote:

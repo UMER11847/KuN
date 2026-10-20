@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from '../lib/router';
 import { brandConfig } from '../data/brandConfig';
+import { images } from '../data/images';
 import { ArrowRight, Coffee, Trees, BookOpen, VolumeX, Sparkles } from 'lucide-react';
 
 export function ExperiencesPage() {
@@ -93,7 +94,7 @@ export function ExperiencesPage() {
             <div className="lg:col-span-6">
               <div className="border border-[#DAD3C7] bg-[#E8E2D8] overflow-hidden aspect-[4/3] group">
                 <img
-                  src="/src/assets/images/kun_experience_cafe_1791583774534.jpg"
+                  src={images.experienceCafe}
                   alt="Customer enjoying herbal tea and philosophy book in tranquil café"
                   className="w-full h-full object-cover filter saturate-[0.94] group-hover:scale-105 transition-transform duration-700 ease-out"
                   referrerPolicy="no-referrer"
@@ -184,7 +185,7 @@ export function ExperiencesPage() {
             <div className="lg:col-span-6 lg:order-1">
               <div className="border border-[#DAD3C7] bg-[#FAF8F5] overflow-hidden aspect-[4/3] group">
                 <img
-                  src="/src/assets/images/kun_retreat_mindfulness_1791583790140.jpg"
+                  src={images.retreat}
                   alt="Courtyard meditation in quiet natural sanctuary"
                   className="w-full h-full object-cover filter saturate-[0.94] group-hover:scale-105 transition-transform duration-700 ease-out"
                   referrerPolicy="no-referrer"
